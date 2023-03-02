@@ -1,0 +1,16 @@
+import { Meta, Canvas, Story, Source } from "@storybook/addon-docs";
+import dedent from "ts-dedent";
+import "assets/css/index.css";
+import Brand from "./example/Sample";
+
+<Meta title="Components/Brand" />
+
+##Brand##
+This is the Atom Brand import component to display the brand logo image, please press this colored text to direct it to the brand component that has been provided, [[Default
+Example](/docs/components-brand-example--success)] if you want to see in action
+
+export const Template = (args) => <Brand {...args} />;
+
+<Story name="Introduction" args={{}}>
+    {Template.bind({})}
+</Story>
